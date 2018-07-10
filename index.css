@@ -16,29 +16,27 @@ body {
 .parent .child {
     background: #2F4F4F;
     border: 1px solid #2c2c2c;
-    border-radius: 15px;
-    box-shadow: 0px 3px 20px 2px #35eea4;
-    display: flex;
-    
+    border-radius: 12px;
+    display: flex; 
 	flex-wrap: wrap;
 	align-content: center;
 	
 }
 
   .heading {
-    color: #35eea4;
-    font-family: "Playfair Display", serif;
+    color:#20B2AA;
+    font-family: Tahoma, Geneva, sans-serif;
     font-size: 4rem;
     font-weight: 700;
 	
-	padding-left: 14vw;
+	padding-left: 10vw;
    
 
 }
 
   .sub-heading {
-    color: #35eea4;
-    font-family: "Playfair Display", "Times New Roman", Times, serif;
+    color: 	#20B2AA;
+    font-family: Tahoma, Geneva, sans-serif;
     font-size: 1.5 rem;
     margin: 0;
 	padding-left: 35vw;
@@ -48,7 +46,7 @@ body {
     background: none;
     border: none;
     border-radius: 5px;
-    color: #35eea4;
+    color: 	#20B2AA;
     font-family: Tahoma, Geneva, sans-serif;
     font-size: 1rem;
     letter-spacing: 3px;
@@ -56,13 +54,10 @@ body {
 	
     padding: 10px;
     
-    transition: box-shadow 0.3s linear 0.1s;
+  
 }
 
-.banner .card .sub-heading button:focus{
-    cursor: pointer;
-    box-shadow: 0 3px 20px 0 #35eea4;
-}
+
 
 .icon
 {
