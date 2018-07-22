@@ -62,7 +62,9 @@ background-color: #F0FFFF;
     background-color: white; 
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px){
+
+
+@media screen and (min-width: 480px) and (max-width: 1000px){
 	
 	
 	.blue-back{
@@ -95,6 +97,14 @@ background-color: #F0FFFF;
 }
 
 @media screen and (max-width: 479px){
+	
+	p{
+		font-size:0.8rem;
+	}
+	strong{
+		font-size:1rem;
+	}
+
 	
 	.blue-back{
    
