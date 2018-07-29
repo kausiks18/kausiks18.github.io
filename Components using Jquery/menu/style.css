@@ -1,0 +1,72 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Playfair Display", serif;
+}
+
+nav{
+    width: 100%;
+    background: steelblue;
+}
+
+ul{
+    width: 40%;
+    margin: 0 auto;
+    padding: 0;
+	padding-left:60%
+}
+
+li{
+    list-style: none;
+    display: inline-block;
+    padding: 20px;
+}
+
+ul li:hover{
+font-size : 1.2em;
+}
+
+ul li a{
+    color: #ffff;
+text-decoration: none;
+}
+
+.toggle{
+    width: 100%;
+    padding: 10px 20px;
+    background: #001f44;
+    text-align: right;
+    box-sizing: border-box;
+    color: #ffff;
+    font-size: 30px;
+    display: none;
+}
+
+@media screen and (max-width:768px){
+    .toggle{
+        display:block;
+    }
+
+
+    ul {
+        width: 100%;
+        display: none;
+		
+	padding-left:0%
+    }
+	ul li:hover{
+font-size : 1.2em;
+}
+
+    ul li {
+        display: block;
+        text-align: left;
+		
+    }
+
+    .active{
+        display: block;
+    }
+}
+
+

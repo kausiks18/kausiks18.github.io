@@ -1,0 +1,38 @@
+.body{
+	margin : 0;
+	padding : 0;
+	
+}
+
+.item {
+	border : 1px solid black;
+	border-radius: 5px;
+	padding : 10px;
+	 background: #2c2c2c;
+	font-family: "Playfair Display", serif;
+	margin : 1px;
+	color: #35eea4;
+}
+
+.data{
+	border : 1px solid black;
+	border-radius: 5px;
+	padding : 10px;
+	font-family: "Times New Roman", Times, serif;
+	font-size : 1.5em;
+	background-color : #f8f9fa;
+}
+
+
+.hoverItem {
+	color : blue;
+	  font-family: "Istok Web", sans-serif;
+	   text-transform: uppercase;
+    transition: box-shadow 0.3s linear 0.1s;
+}
+
+
+
+
+
+
