@@ -85,7 +85,7 @@ $("#ldr").hide();
                         <tr><td>&nbsp;&nbsp;&nbsp;Released</td><td>&nbsp;&nbsp;&nbsp;${response.Released}</td></tr>
                         <tr><td>&nbsp;&nbsp;&nbsp;Runtime</td><td>&nbsp;&nbsp;&nbsp;${response.Runtime}</td></tr>
                         <tr><td>&nbsp;&nbsp;&nbsp;Genre</td><td>&nbsp;&nbsp;&nbsp;${response.Genre}</td></tr>
-                        <tr><td>&nbsp;&nbsp;&nbsp;Director</td>&nbsp;&nbsp;&nbsp;<td>${response.Director}</td></tr>
+                        <tr><td>&nbsp;&nbsp;&nbsp;Director</td><td>&nbsp;&nbsp;&nbsp;${response.Director}</td></tr>
                         <tr><td>&nbsp;&nbsp;&nbsp;Actors</td><td>&nbsp;&nbsp;&nbsp;${response.Actors}</td></tr>
                         <tr><td>&nbsp;&nbsp;&nbsp;imdbRating</td><td>&nbsp;&nbsp;&nbsp;${response.imdbRating}</td></tr>
                        `;
