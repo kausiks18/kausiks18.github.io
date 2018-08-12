@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>IMDB Movies</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="index.html">
+		<img src="images/logo.png" width="40" height="30" class="d-inline-block align-top" alt="" class="rounded-circle">MoviE DaTA</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="py-0 container nav  d-flex justify-content-end  pr-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.imdb.com/">IMDB</a>
+                </li>
+				 
+				
+				
+            </ul>
+        </div>
+    </nav>
+	
+	
+	<div class="jumbotron">
+  <h1 class="display-6">Welcome IMDB Movie search</h1>
+  <p class="lead">This is a simple  movie search unit . It is using following  url api.</p>
+    <a class="lead" href="http://www.omdbapi.com/">http://www.omdbapi.com/</a>
+</div>
+	
+	
+<div class="container-fluid ">
+				
+					
+				<ul class="py-0 container nav nav-pills nav-fill d-flex justify-content-center
+				 pr-0" role="tablist">
+				  <li class="nav-item">
+				    <a href="#title" role="tab" aria-selected="true" data-toggle="tab"><h5 class="text-truncate mb-0 py-3">Title</h5></a>
+				  </li>
+				  <li class="nav-item">
+				    <a href="#year" role="tab" aria-selected="false" data-toggle="tab"><h5 class="text-truncate mb-0 py-3">Title & Year</h5></a>
+				  </li>
+				  <li class="nav-item">
+				    <a href="#id" role="tab" aria-selected="false" data-toggle="tab"><h5 class="text-truncate mb-0 py-3">IMDB ID</h5></a>
+				  </li>
+				  
+				</ul>
+			</div>
+<div class="tab-content pt-5">
+	<!-- Title -->
+	<div role="tabpanel" class="tab-pane active" id="title">
+	
+	<div class="input-group mb-3">
+				<input type="text" class="form-control" placeholder="Title" aria-label="Title" aria-describedby="basic-addon2" id="title1">
+				<div class="input-group-append">
+					<button class="btn btn-secondary" type="button" id="search1">Search</button>
+				</div>
+			</div>			
+	 
+	   </div>
+	 <!-- year -->
+	<div role="tabpanel" class="tab-pane fade" id="year">
+	<div class="input-group mb-3">
+	<input type="text" class="form-control" placeholder="Title" aria-label="Title" aria-describedby="basic-addon2" id="title2">
+				<input type="text" class="form-control" placeholder="Year" aria-label="Year" aria-describedby="basic-addon2" id="titleYear">
+				<div class="input-group-append">
+					<button class="btn btn-secondary" type="button" id="search2">Search</button>
+				</div>
+	 </div>
+	 </div>
+	 <!-- Id -->
+	<div role="tabpanel" class="tab-pane fade" id="id">
+	<div class="input-group mb-3">
+	<input type="text" class="form-control" placeholder="Id" aria-label="Id" aria-describedby="basic-addon2" id="titleId">
+				<div class="input-group-append">
+					<button class="btn btn-secondary" type="button" id="search3">Search</button>
+				</div>
+	 </div>
+	  </div>
+	  
+	 </div>
+	 
+<div class="container " id="ldr">
+<div class="row">
+	<div class="col-4">
+		
+	</div>
+	<div class="col-4" id="colLoa">
+     <div class="loader"></div>
+		
+	</div>
+	<div class="col-4">
+		
+	</div>
+	
+</div>	
+</div>
+
+
+	
+	
+	  <div id="result">
+                    <table class="table table-dark">
+                        <thead>
+
+                        </thead>
+                        <tbody id="infoTable">
+
+                        </tbody>
+                    </table>
+                </div>
+				
+				
+				
+				
+      <footer class="footer">
+        <div class="container text-center">
+            <span class="text-muted">&copy; All Rights Reserved By Kausik.</span>
+        </div>
+    </footer>
+	  <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+        <script src="index.js"></script>
+	
+	
+	</body>
+
+
+
+</html>
